@@ -9,4 +9,15 @@ fun main(args: Array<String>) {
 
     var types = Types()
     types.exploreTypes()
+
+    var a: Double? = 99.999
+    var b: Double? = 55.555
+
+    var tmp: Double? = a
+    a = b
+    b= tmp
+
+    println(a?.toInt())
+    println(b?.toInt())
+
 }
