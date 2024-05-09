@@ -41,6 +41,21 @@ class AnimalSecondary {
     }
 }
 
+class AnimalTogether(var name: String, var kind: String){
+    var age: Int? = null
+    var friend: String? = null
+    constructor(name: String, kind: String, age: Int) : this(name, kind){
+        this.age = age
+    }
+    constructor(name: String, kind: String, age: Int, friend: String) : this(name, kind, age){
+        this.friend = friend
+    }
+
+    fun voice() {
+        println("My name is $name, I'm $kind")
+    }
+}
+
 fun main(){
     var animal = Animal()
     animal.name = "Shrek"
@@ -58,4 +73,7 @@ fun main(){
 
     var animalSecondary2 = AnimalSecondary("Bem","bear",10)
     animalSecondary2.voice()
+
+    var animalTogether = AnimalTogether("Roki", "dog")
+    animalTogether.voice()
 }
