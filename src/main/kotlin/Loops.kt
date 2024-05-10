@@ -92,5 +92,22 @@ fun main() {
         println(tab[i])
     }
 
+    println("-----------------------------------")
+
+    for(i in 0..<5){
+        println(i)
+    }
+
+    println("-----------------------------------")
+
+    loopOne@ for(i in 0..7){
+        loopTwo@ for(j in 1..7){
+            println(j)
+            if(i == j){
+                break@loopOne
+            }
+        }
+    }
+
 
 }

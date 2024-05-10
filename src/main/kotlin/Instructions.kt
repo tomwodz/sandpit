@@ -127,4 +127,14 @@ fun main(){
         else -> "Brak"
     }
     println(season)
+
+    val x = -5
+    println(when(x){
+        1 -> "jeden"
+        in -6..<0 -> "jest od -6 do 0"
+        !in 1..<10 -> "nie jest od 1 do 9"
+        !in 1..10 -> "nie jest od 1 do 10"
+        is Int -> "liczba typu Int"
+        else -> "nie ma"
+    })
 }

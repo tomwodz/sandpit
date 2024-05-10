@@ -28,4 +28,11 @@ fun main() {
     )
     println(twoDimensional[0][0])
     println(twoDimensional[2][1])
+
+    var vehicle = arrayOf("Car","Motor","Bike")
+    println(vehicle.get(0))
+
+    for(i in vehicle.indices){
+        println(vehicle.get(i))
+    }
 }
